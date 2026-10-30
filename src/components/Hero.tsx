@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Check, Copy, MessageCircle, ArrowDown } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/trainerData';
+import heroYogaImg from '../assets/images/yoga_trainer_hero_1793343057521.jpg';
 
 interface HeroProps {
   onScrollToBooking: () => void;
@@ -174,7 +175,7 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToBooking }) => {
         <div className="mt-10 sm:mt-14 max-w-4xl mx-auto">
           <div className="relative rounded-2xl overflow-hidden border border-stone-200 shadow-lg bg-stone-100">
             <img
-              src="/src/assets/images/yoga_trainer_hero_1793343057521.jpg"
+              src={heroYogaImg}
               alt="Female Yoga Trainer in Kharghar conducting a private session"
               className="w-full h-[320px] sm:h-[420px] md:h-[480px] object-cover"
               referrerPolicy="no-referrer"

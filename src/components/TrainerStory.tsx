@@ -1,6 +1,7 @@
 import React from 'react';
 import { Heart, ShieldCheck, Sun, Sparkles, CheckCircle } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/trainerData';
+import privateYogaImg from '../assets/images/private_yoga_session_1793343057560.jpg';
 
 export const TrainerStory: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ export const TrainerStory: React.FC = () => {
           <div className="order-2 lg:order-1 relative">
             <div className="relative rounded-2xl overflow-hidden border border-stone-200 shadow-md bg-stone-100">
               <img
-                src="/src/assets/images/private_yoga_session_1793343057560.jpg"
+                src={privateYogaImg}
                 alt="Female Yoga Trainer in Kharghar offering personalized posture adjustment"
                 className="w-full h-[380px] sm:h-[480px] object-cover"
                 referrerPolicy="no-referrer"
